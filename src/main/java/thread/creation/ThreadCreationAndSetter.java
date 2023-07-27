@@ -1,6 +1,6 @@
-package threadcreation;
+package thread.creation;
 
-public class Main {
+public class ThreadCreationAndSetter {
 
     public static void main(String[] args) throws InterruptedException {
         Thread thread=new Thread(new Runnable() { // We are purposley not making it in lambda
