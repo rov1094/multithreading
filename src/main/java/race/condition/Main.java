@@ -54,15 +54,15 @@ public class Main {
     private static class InventoryCounter{
         private int item;
 
-        public void increment(){
+        public synchronized void increment(){
             item++;
         }
 
-        public void decrement(){
+        public synchronized void decrement(){
             item--;
         }
 
-        public int getInventory(){
+        public synchronized int getInventory(){
             return item;
         }
     }
